@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -79,118 +80,4 @@ closeModalBtn2.addEventListener('click', () => {
 });
 
 </script>
-<style>
-  
-  html {
-    background-image: url("haikei.jpg");
-    background-size: 250%;
-}
-
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-  }
-  
-  .icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 60px;
-    border-radius: 50%;
-    background-color: #444c5c;
-    background-image: url("icon.png");
-    background-size: 100px;
-    box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.3);
-      
-  }
-  .title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  .subtitle {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  .content {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666666;
-    margin-bottom: 20px;
-  }
-  .highlight {
-    color: #0099CC;
-    font-weight: bold;
-  }
-  .accordion-content {
-    display: none;
-  }
-  
-  .accordion-header {
-    cursor: pointer;
-  }
-  
-  .accordion-header.active {
-    background-color: #eee;
-  }
-  
-  .accordion-header.active::after {
-    content: "-";
-  }
-  
-  .accordion-header::after {
-    content: "+";
-    float: right;
-  }
-  
-  #rules-modal,
-  #rules-modal2 {
-  display: none;
-  color:black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
-  z-index: 9999;
- }
-  #show-rules-btn,
-  #show-rules-btn2,
-  #close-modal-btn,
-  #close-modal-btn2 {
-    display: inline-block;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 25px;
-    background-color: #E74C3C;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  #show-rules-btn:hover,
-  #show-rules-btn2:hover,
-  #close-modal-btn:hover,
-  #close-modal-btn2:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  }
-  .rule-content {
-    background-color: white; 
-    padding: 10px 10px 10px 50px;
-    color: black; 
-  }
-</style>
 </html>
