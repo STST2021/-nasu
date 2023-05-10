@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>自己紹介</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <div class="container">
+    <div class="icon"></div>
+    <h2 style="font-size: 2rem; font-family: 'Mochiy Pop One', sans-serif; background-color: hsla(0,0%,100%,.4); border-radius: 10.6666666667vw;">関口秋輝</h2>
+    <h4 style="font-family: 'Mochiy Pop One', sans-serif;">こんにちは！関口秋輝です。</h4><br>
+    <div class="box" style="background-color: white; width:100%; height:50%; float:right; box-shadow: 2px 2px 5px rgba(0, 0, 0, 5);">
+        <h1 style="text-decoration: underline dotted; font-size: 2.35rem; font-family: 'Instrument Serif', serif;">Profile</h1>
+        <h2 align="left" style="font-family: 'Mochiy Pop One', sans-serif;">【ステータス】
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名前:関口秋輝
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspあだ名:ナス、エッグプランツ、プランツさん
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp所属:SSTC部
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp誕生日:10/21
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp性別:男
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp出身:埼玉県
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp趣味:プログラミング
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp特技:ピカソの名前全部言えるぐらい
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好きな食べ物:魚・肉全般
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp嫌いな食べ物:辛い、酸っぱい、苦いもの全般
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp資格:英検3級、P検3級
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好きな本、アニメ:銀河英雄伝説
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp座右の銘、好きな言葉:千里の道も一歩から
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspプログラミング:HTML/CSS/JAVASCRIPT
+          <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好きな曲:
+        </h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0HHcHDsDPor7LFRkCNumgv?utm_source=generator" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br><h2 style="font-family: 'Mochiy Pop One', sans-serif; text-align: left;">【一言】</h2><h1 style="color:red; font-family: 'Mochiy Pop One', sans-serif;">はじめましての人も<br>こんにちはの人も<br>これからよろしくお願いします</h1><hr style="width:90%;"><br><br>
+        <h1 style="text-decoration: underline dotted; font-size: 2.35rem; font-family: 'Instrument Serif', serif;">MY SCRATCH PROJECTS</h1>
+        <h4 style="font-family: 'Mochiy Pop One', sans-serif;">僕はプログラミングやってるって言ったんですけど、<br>昔から一番好きなのがこのScratchっていうサイトで、<br>私の代表作？をいくつか紹介します</h4><br>
+        <h4>1.SUPER PINPONG</h4>
+        <button id="show-rules-btn">遊び方を見る</button>
+        <div id="rules-modal">
+        </div>
+        <iframe src="https://scratch.mit.edu/projects/657526554/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br>
+        <h4>2.注文の多いドリンクバー</h4>
+        <button id="show-rules-btn2">遊び方を見る</button>
+        <div id="rules-modal2">
+        </div>
+        <iframe src="https://scratch.mit.edu/projects/592991329/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <br><br><a href="https://scratch.mit.edu/users/STST2021"><button>もっと私の糞作品を見たい方へ</button></a><br><br><br><br><br>
+    </div>
+  </div>
+</body>
+<script>
+const rulesModal = document.getElementById('rules-modal');
+rulesModal.innerHTML = '<div class="rule-content"><h2>遊び方・操作方法</h2><p>【バーの移動】十字キーor画面タップ<br>君はブロックを全破壊できるかな？</p></div><button id="close-modal-btn">閉じる</button>';
+const showRulesBtn = document.getElementById('show-rules-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+showRulesBtn.addEventListener('click', () => {
+  rulesModal.style.display = 'block';
+});
+
+closeModalBtn.addEventListener('click', () => {
+  rulesModal.style.display = 'none';
+});
+
+const rulesModal2 = document.getElementById('rules-modal2');
+rulesModal2.innerHTML = '<div class="rule-content"><h2>遊び方</h2><p>とても簡単!<br>注文リストにあるドリンクの合ったボタンを押せばいいだけ‼<BR>世界記録付き</p></div><button id="close-modal-btn2">閉じる</button>';
+const showRulesBtn2 = document.getElementById('show-rules-btn2');
+const closeModalBtn2 = document.getElementById('close-modal-btn2');
+showRulesBtn2.addEventListener('click', () => {
+  rulesModal2.style.display = 'block';
+});
+
+closeModalBtn2.addEventListener('click', () => {
+  rulesModal2.style.display = 'none';
+});
+
+</script>
+<style>
+  
+  html {
+    background-image: url("haikei.jpg");
+    background-size: 250%;
+}
+
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 60px;
+    border-radius: 50%;
+    background-color: #444c5c;
+    background-image: url("icon.png");
+    background-size: 100px;
+    box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.3);
+      
+  }
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  .highlight {
+    color: #0099CC;
+    font-weight: bold;
+  }
+  .accordion-content {
+    display: none;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+  }
+  
+  .accordion-header.active {
+    background-color: #eee;
+  }
+  
+  .accordion-header.active::after {
+    content: "-";
+  }
+  
+  .accordion-header::after {
+    content: "+";
+    float: right;
+  }
+  
+  #rules-modal,
+  #rules-modal2 {
+  display: none;
+  color:black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 9999;
+ }
+  #show-rules-btn,
+  #show-rules-btn2,
+  #close-modal-btn,
+  #close-modal-btn2 {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background-color: #E74C3C;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #show-rules-btn:hover,
+  #show-rules-btn2:hover,
+  #close-modal-btn:hover,
+  #close-modal-btn2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  .rule-content {
+    background-color: white; 
+    padding: 10px 10px 10px 50px;
+    color: black; 
+  }
+</style>
+</html>
