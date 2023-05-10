@@ -1,14 +1,14 @@
-   html {
+html {
     background-image: url("haikei.jpg");
     background-size: 250%;
 }
-  .container {
+.container {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
-  } 
-  .icon {
+} 
+.icon {
     width: 100px;
     height: 100px;
     margin: 0 auto 60px;
@@ -17,48 +17,48 @@
     background-image: url("icon.png");
     background-size: 100px;
     box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.3);    
-  }
-  .title {
+}
+.title {
     font-size: 36px;
     font-weight: bold;
     color: #333333;
     margin-bottom: 20px;
-  }
-  .subtitle {
+}
+.subtitle {
     font-size: 24px;
     font-weight: bold;
     color: #333333;
     margin-top: 40px;
     margin-bottom: 20px;
-  }
-  .content {
+}
+.content {
     font-size: 16px;
     line-height: 1.5;
     color: #666666;
     margin-bottom: 20px;
-  }
-  .highlight {
+}
+.highlight {
     color: #0099CC;
     font-weight: bold;
-  }
-  .accordion-content {
+}
+.accordion-content {
     display: none;
-  }
-  .accordion-header {
+}
+.accordion-header {
     cursor: pointer;
-  }
-  .accordion-header.active {
+}
+.accordion-header.active {
     background-color: #eee;
-  }
-  .accordion-header.active::after {
+}
+.accordion-header.active::after {
     content: "-";
-  }
-  .accordion-header::after {
+}
+.accordion-header::after {
     content: "+";
     float: right;
-  }
-  #rules-modal,
-  #rules-modal2 {
+}
+#rules-modal,
+#rules-modal2 {
   display: none;
   color:black;
   position: fixed;
@@ -68,11 +68,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); 
   z-index: 9999;
- }
-  #show-rules-btn,
-  #show-rules-btn2,
-  #close-modal-btn,
-  #close-modal-btn2 {
+}
+#show-rules-btn,
+#show-rules-btn2,
+#close-modal-btn,
+#close-modal-btn2 {
     display: inline-block;
     border: none;
     border-radius: 30px;
@@ -87,16 +87,16 @@
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  #show-rules-btn:hover,
-  #show-rules-btn2:hover,
-  #close-modal-btn:hover,
-  #close-modal-btn2:hover {
+}
+#show-rules-btn:hover,
+#show-rules-btn2:hover,
+#close-modal-btn:hover,
+#close-modal-btn2:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  }
-  .rule-content {
+}
+.rule-content {
     background-color: white; 
     padding: 10px 10px 10px 50px;
     color: black; 
-  }
+}
