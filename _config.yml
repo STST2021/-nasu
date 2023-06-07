@@ -1,2 +1,14 @@
+repository: stst2021/nasu
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: none
+
+theme: jekyll-theme-architect
+
+url: "https://stst2021.github.io" 
 plugins:
+ - jekyll-seo-tag
  - jekyll-sitemap
+ - jekyll-feed
